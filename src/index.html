@@ -192,9 +192,6 @@
     <div class="container mx-auto">
       <div class="flex justify-center">
         <div class="w-1/4">
-          <audio hidden autoplay loop>
-            <source src="https://sandi.panggahtani.net/dist/aud/komang.mp3" type="audio/mpeg">
-          </audio>
         </div>
         <div class="w-2/4">
           <div class="py-1 px-2 bg-white/40 rounded-lg border">
@@ -226,5 +223,23 @@
       </div>
     </div>
   </nav>
+  <div class="tampil fixed top-0 right-0 left-0 bottom-0 mx-auto" id="tampil">
+    <div class="tampil-body flex w-full text-center h-full justify-center bg-slate-900/75 py-10 items-center" >
+      <div class=" text-white">
+        <h1 class="font-lux text-3xl mb-5">Selamat Datang</h1>
+        <p class="mb-10">Assalamualaikum Warohmatullahi Wabarokatuh</p>
+        <button type="submit" class="py-1 px-3 bg-slate-200 text-slate-900 rounded-full border hover:bg-slate-700/50 hover:text-white" onclick="putarmusic()">Open Invitation</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var a = document.getElementById('tampil');
+    function putarmusic(){
+      a.style.display = "none";
+      var audio = new Audio('https://sandi.panggahtani.net/dist/aud/komang.mp3');
+      audio.play();
+      audio.loop();
+    }
+  </script>
 </body>
 </html>
